@@ -38,6 +38,16 @@ public class ex3 {
                         }
 
                         // lương nhập đúng
+                        // phân loại lương
+                        if(salary<5000000)
+                            System.out.println("Thu nhập thấp");
+                        else if (salary<15000000) {
+                            System.out.println("Thu nhập trung bình");
+                        } else if (salary<50000000) {
+                            System.out.println("Thu nhập khá");
+                        } else {
+                            System.out.println("Thu nhập cao");
+                        }
                         totalEmployees++;
                         totalSalary+=salary;
                         if(salary > maxOfSalary)
@@ -83,3 +93,4 @@ public class ex3 {
         }
     }
 }
+
